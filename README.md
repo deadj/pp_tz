@@ -7,10 +7,12 @@
 ## Как подключить решение
 
 ```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan db:seed // для заполнения БД
+1. composer install
+2. cp .env.example .env
+3. создать БД, занить DB_DATABASE, DB_USERNAME, DB_PASSWORD в .env
+4. php artisan key:generate
+5. php artisan migrate
+6. php artisan db:seed // для заполнения БД
 ```
 
 ## Как протестировать
